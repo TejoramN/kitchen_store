@@ -11,6 +11,8 @@ import { CartPageComponent } from './components/pages/cart-page/cart-page.compon
 import { TitleComponent } from './components/partials/title/title.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CheckoutComponent } from './components/pages/checkout/checkout.component';
+import { GooglePayButtonModule } from '@google-pay/button-angular';
 
 
 
@@ -25,6 +27,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CartPageComponent,
     TitleComponent,
     LoginComponent,
+    CheckoutComponent,
+
 
   ],
   imports: [
@@ -33,6 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    GooglePayButtonModule,
 
   ],
   providers: [],
