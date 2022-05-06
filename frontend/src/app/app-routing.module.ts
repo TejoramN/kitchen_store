@@ -3,9 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { ItemPageComponent } from './components/pages/item-page/item-page.component';
+import { LoginComponent } from './components/pages/login/login.component';
+
+
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  {path:'',redirectTo:'login',pathMatch:'full'},
+  {path:'login', component:LoginComponent},
+  {path:'home',component:HomeComponent},
   {path:'search/:searchTerm',component:HomeComponent},
   {path:'item/:id',component:ItemPageComponent},
   {path:'cart-page', component: CartPageComponent}
@@ -15,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule{}
