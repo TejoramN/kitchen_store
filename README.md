@@ -10,6 +10,8 @@ If Email = admin@gmail.com and password = Admin@123 then the site will be redire
 
 In the Home page User will get to see the “Logout” option and “Cart” options in the header and all the images of “Food Items”  available  in the site.
 
+When the User clicks on the “Logout”  he will be redirected to the login page
+
 Available Items in the Site:
 
   1)	Tomato
@@ -19,7 +21,7 @@ Available Items in the Site:
   5)	Beetroot
   6)	Apple
   7)	Pomegranate
-  8)	 Mango
+  8)  Mango
 
 If the user wants to buy a specific item he will click on the “Image” and he will be redirected to the site of the image where the user can see the “Price” (PER KG in Rupees )of the item and  option to “Add to cart”
 
